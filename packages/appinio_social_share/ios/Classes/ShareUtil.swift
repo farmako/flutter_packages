@@ -568,7 +568,7 @@ public class ShareUtil{
                 if UIApplication.shared.canOpenURL(whatsappURL as URL) {
 
                         if let imageData = image.jpegData(compressionQuality: 1.0) {
-                            let tempFile = URL(fileURLWithPath: NSHomeDirectory()).appendingPathComponent("Documents/whatsAppTmp.wai")
+                            let tempFile = URL(fileURLWithPath: NSHomeDirectory()).appendingPathComponent("Documents/Share.jpg")
                             do {
                                 try imageData.write(to: tempFile, options: .atomic)
                                 let documentInteractionController = UIDocumentInteractionController(url: tempFile)
